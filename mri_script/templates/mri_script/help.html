@@ -1,0 +1,77 @@
+{% extends 'mri_script/base.html' %}
+{% load static %}
+{% block content %}
+<div class="helptext">
+<p>
+<a name="number_of_subjects"></a>
+<h2>Number of Subjects</h2>
+The total number of participants in your study.
+<br><br> 
+</p>
+
+<p>
+<a name="number_of_scans_per_subject"></a>
+<h2>Number of Scans per Subject</h2>
+A scan is what is obtained in a single visit to the MRI Facility.
+If your participants make several visits to the facility for your study, you should put the number of visits in this box.
+Most studies only have a single scan. 
+<br><br>
+</p>
+
+<p>
+<a name="number_of_runs_per_scan"></a>
+<h2>Number of Functional Runs per Scan</h2>
+A run is a continuous scan sequence. Most studies have several functional scan sequences, 
+which are divided by a brief period of time where the scanner is not active. 
+<br><br>
+To find out how many runs you have in your scan open Finder and navigate to the directory 
+that you have your raw scans in. Look for the folders titled EPI_Run_#, with the number being 
+the run of the scan sequence. The number of folders titled “EPI_Run_#” is the number of runs that you have.
+<br><br>
+<img src="{% static 'mri_script/images/help1.png' %}">
+<br><br> 
+</p>
+
+<p>
+<a name="number_of_slices_in_functional_scan"></a>
+<h2>Number of Slices in Functional Scan</h2>
+Every MRI scan is acquired by taking several 2 dimensional images, which can then be assembled together to make a 3-dimensional brain. Each 2-dimensional image is referred to as a slice. 
+<br><br>
+To find the number of slices, open Terminal and change to the directory where your raw files are using the "cd" command (cd /Volumes/etc.). These should be in a folder titled EPI_Run_#, where the number is the number of the scan sequence. If you aren't sure the full path, you can drag the folder from Finder to the Terminal window after typing "cd" and it will paste it in there.  
+<br><br>
+Once in that directory, type "dicom_hdr" into the command window along with one of the file names (e.g., IM-0009-0001.dcm). This will write a lot of data to the terminal window. 
+<br><br>
+Look for the line that has the number “0019 100a” the number on the right will be the number of slices in the functional scan.
+<br><br>
+<img src="{% static 'mri_script/images/help2.png' %}" width = 80%>
+<br><br> 
+</p>
+
+<p>
+<a name="tr_length"></a>
+<h2>TR Length</h2>
+In a functional scan, a TR (short for repetition time) is a time interval in which the whole brain is imaged. These are generally measured in milliseconds. 
+<br><br>
+To find you TR length, open Terminal and change to the directory where your raw files are using the "cd" command (cd /Volumes/etc.). These should be in a folder titled EPI_Run_#, where the number is the number of the scan sequence. If you aren't sure the full path, you can drag the folder from Finder to the Terminal window after typing "cd" and it will paste it in there.  
+<br><br>
+Once in that directory, type "dicom_hdr" into the command window along with one of the file names (e.g., IM-0009-0001.dcm). This will write a lot of data to the terminal window.  
+<br><br>
+Look for the line that has the number “0018 0080” to the right of the line it should say “ACQ Repetition Time//“ with a number following. That number is the TR length.
+<br><br>
+<img src="{% static 'mri_script/images/help3.png' %}">
+<br><br> 
+</p>
+
+<p>
+<a name="number_of_trs_in_a_run"></a>
+<h2>Number of TRs in a Run</h2>
+A functional scan sequence is made up of several time intervals (TR, see TR Length above) in which the whole brain is imaged. 
+<br><br>
+To find the number of TRs in your scan sequence, open Finder and navigate to the directory that you have your raw scans in. Look for the folders titled EPI_Run_#, with the number being the run of the scan sequence. Open one of these, and you will see a list of files that are named something like IM-0009-0001.dcm. The actual numbers might be different, but the sequence is the same. Scroll down to the bottom and look at the second number (e.g., IM-0009-0001.dcm). The number in this position of the file name is the number of TRs in the run. 
+<br><br>
+<img src="{% static 'mri_script/images/help4.png' %}">
+<br><br> 
+</p>
+</div>
+
+{% endblock %}

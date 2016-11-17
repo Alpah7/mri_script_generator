@@ -1,0 +1,370 @@
+<!doctype html>
+
+<!-- this is the sess data:-->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>BYU MRI Research Facility</title>
+    <meta name="description" content="BYU Magnetic Resonance Imaging Research Facility." />
+    <meta name="author" content="BYU MRI Research Facility" />
+    <meta name="keywords" content="byu mri, BYU MRI Research Facility, Magnetic Resonance, mri, MRI Facility. mri research">
+    <meta name="google-site-verification" content="706MqTpV7iJeeb8YnDKrdSqxOZftpKkrmPT511MCkuI" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="shortcut icon" href="https://mri.byu.edu/template/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/static/mri_script/style.css" />
+
+
+    <script src="https://mri.byu.edu/template/js/libs/modernizr-2.0-basic.min.js"></script>
+    <script type="text/javascript" src="/static/mri_script/javascript.js"></script>
+    <!-- script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script -->
+    <!-- This is the Calendars CSS Stylesheet -->
+
+    <link rel="stylesheet" type="text/css" href="https://mri.byu.edu/template/css/scheduler_style.css" />
+    
+    <!-- Insert plugin stylesheets here -->
+    <link rel="stylesheet" href="https://mri.byu.edu/template/css/plugins/slider.css" />
+    <!--link rel="stylesheet" href="http://mri.byu.edu/template/css/plugins/calendar.css" /-->
+    <link rel="stylesheet" href="https://mri.byu.edu/template/css/plugins/news.css" />
+    <link rel="stylesheet" href="https://mri.byu.edu/template/css/plugins/socialmedia.css" />
+    <link rel="stylesheet" href="https://mri.byu.edu/template/css/plugins/960.css" />
+
+    <link rel="stylesheet" href="https://mri.byu.edu/magnet_scheduler/MRI_Calendar/jquery-ui-themes-1.10.3/themes/cupertino/jquery-ui.css" />
+    <link rel="stylesheet" href="https://mri.byu.edu/magnet_scheduler/MRI_Calendar/fullcalendar-1.6.1/fullcalendar/fullcalendar.css" />
+    <link rel="stylesheet" href="https://mri.byu.edu/magnet_scheduler/MRI_Calendar/fullcalendar-1.6.1/fullcalendar/fullcalendar.print.css" media="print" />
+
+
+</head>
+
+<body>
+    <header id="main-header">
+        <div id="header-top" class="wrapper">
+            <div id="logo">
+                <a href="https://www.byu.edu/"><img src="https://mri.byu.edu/template/img/byu-logo.gif" alt="BYU Logo" /></a>
+            </div>
+                <a href="https://mri.byu.edu/" id="site-name">MRI Research Facility</a>
+
+            <div id="search-container">
+                                        <a href="https://mri.byu.edu/Auth/main_login.php" class="button">Login</a>
+                                <!-- SEARCH - set up with GSA default; change URL in action if you want to use different product -->
+                <form method="get" action="https://gurgle2.byu.edu/search">
+                    <!-- Change placeholder text to be specific for your implementation -->
+                    <input type="text" name="q" id="search" placeholder="Search Here" />
+                    <input type="image" src="https://mri.byu.edu/template/img/search-button.png" alt="Search" id="search-button"/>
+                    <!-- Uncomment next line and insert your custom collection name -->
+                    <!-- input type="hidden" name="site" value="default_collection_name" -->
+                    <!-- Insert your custom frontend name in place of default in next line -->
+                    <input type="hidden" name="client" value="default_frontend">
+                    <input type="hidden" name="output" value="xml_no_dtd">
+                    <input type="hidden" name="proxystylesheet" value="default_frontend">
+                </form>
+            </div>
+
+            <nav id="secondary-nav" class="no-js">
+                            </nav>
+
+        </div>
+        <nav id="primary-nav" class="no-js">
+            <ul>
+                <li><a class="single" href="https://mri.byu.edu">Home</a></li>
+                <li><a href="">Research</a>
+                    <div class="sub">
+                        <ul class="links">
+                            <li class="featured">
+                                <ul>
+
+                                    <li>Current Research</li>
+                                </ul>
+                                <hr/>
+                            </li>
+                            <div class="left">
+                                <li><a href="https://mri.byu.edu/CurrentResearch/participate.php">Participate</a></li>
+                                <li><a href="https://mri.byu.edu/CurrentResearch/faculty_staff.php">Personnel</a></li>
+                                <li><a>Research Groups</a>
+                                    <ul class="sublinks">
+                                        <li><a href="https://fhssfaculty.byu.edu/FacultyPage.aspx?id=edb3" target="_blank">Dr. Bigler</a></li>
+                                        <li><a href="https://magres.groups.et.byu.net" target="_blank">Biomedical Imaging Research Group</a></li>
+                                        <li><a href="https://memory.byu.edu/Pages/Home_new.aspx" target="_blank">Memory and Cognition Laboratory</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li><a href="">link</a></li> -->
+                            </div>
+                            <div class="left">
+                                <!-- <li><a href="#">Link 7</a></li>
+                                <li><a href="#">Link 8</a></li>
+                                <li><a href="#">Link 9</a></li>
+                                <li><a href="#">Link 10</a></li>
+                                <li><a href="#">Link 11</a></li>
+                                <li><a href="#">Link 12</a></li> -->
+                            </div>
+                        </ul>
+                        <!--<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
+                            <p><a href="#">Picture Link</a></p>
+                            <p>Text text text text text.</p>
+                        </div>
+                        <div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
+                            <p><a href="#">Picture Link</a></p>
+                            <p>Text text text text text.</p>
+                        </div>-->
+                    </div>
+                </li>
+                <li><a href="">Volunteers</a>
+                    <div class="sub">
+                        <ul class="links">
+                            <li class="featured">
+                                <ul>
+                                    <li>What you need to know</li>
+                                </ul>
+                                <hr/>
+                            </li>
+                            <div class="left">
+                                <li><a href="https://mri.byu.edu/Volunteers/safety.php">Safety</a></li>
+                                <li><a href="https://mri.byu.edu/Volunteers/Where to find us.php">Where to find us</a>
+                                    <ul >
+                                        <li><a href="https://map.byu.edu/">BYU Campus Map</a></li>
+                                    </ul>
+                                </li>
+
+                                <!--<li><a href="#">Link 4</a></li>
+                                <li><a href="#">Link 5</a></li>
+                                <li><a href="#">Link 6</a></li>
+                            </div>
+                            <div class="left">
+                                <li><a href="#">Link 7</a></li>
+                                <li><a href="#">Link 8</a></li>
+                                <li><a href="#">Link 9</a></li>
+                                <li><a href="#">Link 10</a></li>
+                                <li><a href="#">Link 11</a></li>
+                                <li><a href="#">Link 12</a></li> -->
+                            </div>
+                        </ul>
+                        <!--<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
+                            <p><a href="#">Picture Link</a></p>
+                            <p>Perhaps this could be a vid of how to prep for the volunteer expereience.</p>
+                        </div>
+                        <div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
+                            <p><a href="#">Picture Link</a></p>
+                            <p>Perhaps this could be a vid about how to sign up to be a volunteer for the different research groups.</p>
+                        </div>-->
+                    </div>
+                </li>
+                <li><a href="">Equipment and Facilities</a>
+                    <div class="sub">
+                        <ul class="links">
+                                <ul>
+                                    <li><a href="https://mri.byu.edu/Equipment and Facilities/resources.php">Equipment and Capabilities</a></li>
+                                </ul>
+                                <li><a href="https://mri.byu.edu/Equipment and Facilities/UsingTheFacility.php">Using the Facility</a></li>
+                                <li><a href="https://mri.byu.edu/Volunteers/Where to find us.php">Where to find us</a>
+                                        <li><a href="https://map.byu.edu/">BYU Campus Map</a></li>
+                                </li>
+                    </li>
+                            <!--<div class="left">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a>
+                                    <ul class="sublinks">
+                                        <li><a href="#">Sublink 1</a></li>
+                                        <li><a href="#">Sublink 2</a></li>
+                                        <li><a href="#">Sublink 3</a></li>
+                                        <li><a href="#">Sublink 4</a></li>
+                                        <li><a href="#">Sublink 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Link 3</a></li>
+                                <li><a href="#">Link 4</a></li>
+                                <li><a href="#">Link 5</a></li>
+                                <li><a href="#">Link 6</a></li>
+                            </div>
+                            <div class="left">
+                                <li><a href="#">Link 7</a></li>
+                                <li><a href="#">Link 8</a></li>
+                                <li><a href="#">Link 9</a></li>
+                                <li><a href="#">Link 10</a></li>
+                                <li><a href="#">Link 11</a></li>
+                                <li><a href="#">Link 12</a></li>
+                            </div> -->
+                        <!--</ul>
+                        <div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
+                            <p><a href="#">Picture Link</a></p>
+                            <p>Perhaps this could be a video walkthrough of the facility for the purpose of getting people comfortable with the layout of the facility.</p>
+                        </div>
+                        <div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
+                            <p><a href="#">Picture Link</a></p>
+                            <p>Text text text text text.</p>
+                        </div> -->
+                    </div>
+                </li>
+                <li> <a href="">Training and Resources</a>
+                    <div class="sub">
+                        <ul class="sublinks">
+                            <li> Safety Training </li>
+                                <ul class="sublinks">
+                                <li><a href="https://mri.byu.edu/MRI_Training/safety_training_main.php">General Safety Information</a></li>
+                                <li><a href="https://mri.byu.edu/MRI_Training/level1_safety.php">Level 1 Training</a></li>
+                                <li><a href="https://mri.byu.edu/MRI_Training/hipaa.php">Health Privacy Training</a></li>
+                                <li><a href="https://mri.byu.edu/MRI_Training/RequestCertification.php">Request Level 2 or 3 Certification</a>
+                                <li><ul class="sublinks"><li><a href="https://mri.byu.edu/MRI_Training/Level_2_Safety_Training"> Level 2 Safety Information</a> </li> </ul></li>
+                                </li>
+                                </ul>
+                            <li>MRI Physics
+                                <ul class="sublinks">
+                                <li><a href="https://mri.byu.edu/MRI_Training/FMRI.php">fMRI</a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Diffusion_MRI">Diffusion MRI</a></li>
+                                <li><a href="https://mri.byu.edu/MRI_Training/DTI.php">DTI</a></li>
+                                </ul>
+                            </li>
+                            <li>Forms
+                                <ul class="sublinks">
+                            
+                                <li><a href="https://mri.byu.edu/MRI_Training/BYU_MRIRF_Screening_Form_v21.pdf" target="_blank">Screening Form</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li> <a href="">Announcements</a>
+                    <!--<div class="sub">
+                        <ul class="sublinks">
+                            <li>Jared Nielson Talk
+                                <ul>
+                                    <li>
+                                        <a href="https://mri.byu.edu/Announcements/Flier140325_Nielsen.pdf"> Flier </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> Naomi Goodrich-Hunsaker
+                                <ul>
+                                    <li>
+                                        <a href="https://mri.byu.edu/Announcements/Flier140408_Goodrich-Hunsaker.pdf"> Flier </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>-->
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="template/js/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+    <script src="https://mri.byu.edu/template/js/script.js"></script>
+
+    <!-- PLUGINS -->
+    <script src="https://mri.byu.edu/template/js/plugins/slider.js"></script>
+    <script src="https://mri.byu.edu/template/js/plugins/calendar.js"></script>
+
+    <!--To get the social media links, visit www.addthis.com to get a Username for analytics.-->
+    <script type="text/javascript">addThisUsername = '';</script>
+    <script src="https://mri.byu.edu/template/js/plugins/addthis.js"></script>
+
+    <!--[if lt IE 7 ]>
+    <script src="template/js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('.arrow a, header h1, #search-button');</script>
+    <![endif]-->
+
+<!-- Please Insert all of your code here -->
+
+	<div id="content" class="wrapper">
+	<div id="main-content">
+       <div class="mainscript">
+           <div class="scriptbanner">
+                <h1>Script Generator</h1>
+                <h2><a href = "/mri_script" >Input</a> | <a href = "/mri_script/help" >Help</a> | <a href = "/mri_script/contact" >Contact</a></h2>
+            <br>
+            </div>
+            {% block content %}
+            {% endblock %} 
+        </div>
+	</div>
+	
+	<div>
+		<br><br><br><br><br> <!--  Just White space-->
+	</div>
+    
+	<footer>
+		<div id="footer-links">
+			<div class="wrapper">
+				<div class="col alpha">
+				
+					<h2>Contact Us</h2>		
+					<h3>Mailing Address:<br>
+					155 McDonald Building <br>
+					MRI Research Facility <br>
+					Brigham Young University <br>
+					Provo, UT 84602</h3>
+					<h3>Phone: (801)422-9420</h3>
+					<h3>Email: mri@byu.edu </h3>
+					<!-- <h3><a href="">Email Us</a></h3>  add email as soon as do ailiassing -->
+					
+				</div>
+				<!--<div class="col">
+					<h2>Footer Column 2</h2>
+					<a href="">Link 1</a>
+					<a href="">Link 2</a>
+					<a href="">Link 3</a>
+					<a href="">Link 4</a>
+				</div>
+				<div class="col double">
+					<h2>Footer Double Column</h2>
+					<div class="left alpha">
+					<a href="">Left Link 1</a>
+					<a href="">Left Link 2</a>
+					<a href="">Left Link 3</a>
+					<a href="">Left Link 4</a>
+					
+					</div>
+					<div class="right omega">
+					<a href="">Right Link 1</a>
+					<a href="">Right Link 2</a>
+					<a href="">Right Link 3</a>
+					<a href="">Right Link 4</a>
+					</div>
+				</div>-->
+				
+				
+			</div>
+		</div>
+		<div id="footer-bottom">
+			<p><a href="https://lds.org/">The Church of Jesus Christ of Latter-day Saints</a></p>
+			<p><a href="https://home.byu.edu/home/copyright">Copyright&#169; 2016, All Rights Reserved</a></p>
+
+		</div>
+	</footer>
+	
+	<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="template/js/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+	<script src="template/js/script.js"></script>
+	
+	<!-- PLUGINS -->
+	<!--script src="template/js/plugins/slider.js"></script>
+	<script src="template/js/plugins/calendar.js"></script>
+	
+	<!--To get the social media links, visit www.addthis.com to get a Username for analytics.-->
+	<!--script type="text/javascript">addThisUsername = '';</script>
+	<script src="template/js/plugins/addthis.js"></script-->
+	
+	<!--[if lt IE 7 ]>
+	<script src="template/js/libs/dd_belatedpng.js"></script>
+	<script> DD_belatedPNG.fix('.arrow a, header h1, #search-button');</script>
+	<![endif]-->	
+
+
+
+
+
+
+<!--  End of your code Here -->
+</body>
+</html>

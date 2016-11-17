@@ -1,0 +1,43 @@
+{% extends 'mri_script/base.html' %}
+{% load static %}
+{% block content %}
+<div class="inputdescription">    
+<p>
+This site is intended to help your research by generating pre-processing scripts for fMRI data.<br><br>
+Enter the following parameters and click generate to download the script.
+</p>
+</div>
+<br>
+<div class="scriptform">
+<form method='post'>{% csrf_token %}
+    <table align="center">
+        {% for field in form %}
+        <tr align="left">
+            <td>
+                <label for="{{ field.label }}">{{ field.label_tag }}</label>
+            </td>
+            <td>
+                {{field}}
+            </td>
+            <td>
+                <a href="/mri_script/help/#{{ field.name }}" target="_blank">
+                    <img src="{% static 'mri_script/images/question_sign.png' %}" width=85%>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+<span class="generatebutton">
+    <span onclick="ShowHiddenText();">
+        <input type='submit' value='Generate Script'/><br>
+    </span>
+</span>
+<a class="scriptlinks" href="/mri_script/contact/#report_a_bug">Problem? Report a Bug</a>
+</form>
+</div>
+<br><br>
+<div id="HiddenTextContainer" style="display: none;">
+   The script has now been downloaded. Check your downloads folder.
+</div>
+{% endblock %}
